@@ -1,3 +1,37 @@
+.pest_icons{
+  height:90px;
+  margin-right:10px;
+}
+
+@media only screen and (max-width: 767.98px) {
+  .pest_icons{height:50px;
+  margin:5px;}
+}
+
+.float{
+  z-index: 10;
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#4FCE5D;
+  font-size: 35px;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.center {
+  all:unset;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 /*------------------------------------------------------------------
 Table of content
 -------------------
@@ -1039,7 +1073,7 @@ textarea:focus {
 }
 
 .header-top-left li a:hover {
-  color: #00bd7b;
+  color: #000;
 }
 
 .header-top-left li:last-child:before {
@@ -1052,7 +1086,7 @@ textarea:focus {
 }
 
 .header-social-link a:hover {
-  color: #00bd7b;
+  color: #000;
 }
 
 .header-social-link a:first-child {
