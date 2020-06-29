@@ -26,13 +26,13 @@
 	// offcanvas mobile menu
     var $offCanvasNav = $('.mobile-menu'),
         $offCanvasNavSubMenu = $offCanvasNav.find('.dropdown');
-    
+
     /*Add Toggle Button With Off Canvas Sub Menu*/
     $offCanvasNavSubMenu.parent().prepend('<span class="menu-expand"><i></i></span>');
-    
+
     /*Close Off Canvas Sub Menu*/
     $offCanvasNavSubMenu.slideUp();
-    
+
     /*Category Sub Menu Toggle*/
     $offCanvasNav.on('click', 'li a, li .menu-expand', function(e) {
         var $this = $(this);
@@ -70,11 +70,14 @@
 
 	// service carousel active js
 	$('.service-carousel-active').slick({
-		speed: 1000,
+		speed: 400,
 		slidesToShow: 3,
 		autoplay: true,
-		arrows: false,
+		dots:true,
+		// arrows: false,
 		adaptiveHeight: true,
+		prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-left"></i></button>',
+		nextArrow: '<button type="button" class="slick-next"><i class="fa fa-angle-right"></i></button>',
 		responsive: [{
 			breakpoint: 992,
 			settings: {
@@ -173,7 +176,7 @@
             }, 1000);
         })
 	});
-	
+
 	// magnific popup js
 	$('.play-btn').magnificPopup({
 		type: 'iframe',
@@ -182,7 +185,7 @@
 
 	// youtube player
 	jQuery("#P1").YTPlayer();
-	
-	
+
+
 })(jQuery);
 
