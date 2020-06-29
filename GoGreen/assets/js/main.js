@@ -68,11 +68,25 @@
 	});
 
 
+	// About us Slider
+	$('.about-carousel-active').slick({
+		speed: 300,
+		slidesToShow: 1,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		dots:false,
+		// arrows: false,
+		adaptiveHeight: true,
+		prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-angle-left"></i></button>',
+		nextArrow: '<button type="button" class="slick-next"><i class="fa fa-angle-right"></i></button>',
+	});
+
 	// service carousel active js
 	$('.service-carousel-active').slick({
-		speed: 400,
+		speed: 300,
 		slidesToShow: 3,
 		autoplay: true,
+		autoplaySpeed: 2000,
 		dots:true,
 		// arrows: false,
 		adaptiveHeight: true,
