@@ -158,27 +158,6 @@
 	//nice select active start
 	$('select').niceSelect();
 
-
-	$('#mc-form').ajaxChimp({
-        language: 'en',
-        callback: mailChimpResponse,
-        // ADD YOUR MAILCHIMP URL BELOW HERE!
-        url: 'https://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef'
-
-    });
-
-    // mailchimp active js
-    function mailChimpResponse(resp) {
-        if (resp.result === 'success') {
-            $('.mailchimp-success').html('' + resp.msg).fadeIn(900);
-            $('.mailchimp-error').fadeOut(400);
-
-        } else if (resp.result === 'error') {
-            $('.mailchimp-error').html('' + resp.msg).fadeIn(900);
-        }
-	}
-
-
 	// Counter To Up JS
     $('.odometer').each(function () {
         $(this).appear(function () {
@@ -197,9 +176,4 @@
 		mainClass: "mfp-fade",
 	});
 
-	// youtube player
-	jQuery("#P1").YTPlayer();
-
-
 })(jQuery);
-
