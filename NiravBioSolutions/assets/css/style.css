@@ -252,18 +252,26 @@ div#preloader {
 # Header
 --------------------------------------------------------------*/
 #header {
+<<<<<<< HEAD
   height: 120px;
+=======
+  height: 80px;
+>>>>>>> 87e49dc2a353a3d3cad05b7e762ebf07216166ab
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
   padding: 20px 0;
   background: rgba(0, 0, 0, 0.5);
+<<<<<<< HEAD
   background-color:#98c5ece3;
   color:#000;
+=======
+>>>>>>> 87e49dc2a353a3d3cad05b7e762ebf07216166ab
 }
 
 #header.header-scrolled {
   background: rgba(0, 0, 0, 0.8);
+<<<<<<< HEAD
   height: 100px;
   padding: 10px 0;
   background-color:#fff;
@@ -273,6 +281,14 @@ div#preloader {
 
 #header .logo h1 {
   font-size: 70px;
+=======
+  height: 60px;
+  padding: 10px 0;
+}
+
+#header .logo h1 {
+  font-size: 36px;
+>>>>>>> 87e49dc2a353a3d3cad05b7e762ebf07216166ab
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -291,11 +307,16 @@ div#preloader {
 #header .logo img {
   padding: 0;
   margin: 0;
+<<<<<<< HEAD
   max-height: 80px;
+=======
+  max-height: 40px;
+>>>>>>> 87e49dc2a353a3d3cad05b7e762ebf07216166ab
 }
 
 @media (max-width: 768px) {
   #header {
+<<<<<<< HEAD
     overflow: hidden;
     height: 100px;
     padding: 10px 0;
@@ -304,6 +325,15 @@ div#preloader {
   }
   #header .logo a{
     padding-top: 5px;
+=======
+    height: 60px;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  #header .logo h1 {
+    font-size: 28px;
+    padding: 4px 0;
+>>>>>>> 87e49dc2a353a3d3cad05b7e762ebf07216166ab
   }
 }
 
@@ -353,7 +383,11 @@ div#preloader {
   color: #000;
   padding: 8px 15px 12px 15px;
   transition: 0.3s;
+<<<<<<< HEAD
   font-size: 16px;
+=======
+  font-size: 15px;
+>>>>>>> 87e49dc2a353a3d3cad05b7e762ebf07216166ab
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
@@ -452,11 +486,18 @@ div#preloader {
   line-height: 1;
   cursor: pointer;
   text-align: right;
+<<<<<<< HEAD
   padding-top:20px;
 }
 
 .mobile-nav-toggle i {
   color: #000;
+=======
+}
+
+.mobile-nav-toggle i {
+  color: #fff;
+>>>>>>> 87e49dc2a353a3d3cad05b7e762ebf07216166ab
 }
 
 .mobile-nav {
@@ -2627,7 +2668,11 @@ span.email-notes {
 /* small mobile :320px. */
 @media (max-width: 767px) {
   .slider-area {
+<<<<<<< HEAD
     margin-top: 100px;
+=======
+    margin-top: 60px;
+>>>>>>> 87e49dc2a353a3d3cad05b7e762ebf07216166ab
   }
   .slider-content {
     padding: 80px 0;
