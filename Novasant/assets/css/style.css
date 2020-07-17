@@ -1,3 +1,28 @@
+.anchor { padding-top: 90px; }
+
+.card2 {
+  display: block;
+  top: 0px;
+  background-color: #f1f6fe;
+  border-radius: 4px;
+  padding: 20px 15px;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  border: 1px solid #f2f8f9;
+  }
+  .card2:hover {
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  top: -4px;
+  border: 1px solid #cccccc;
+  background-color: white;
+  }
+
+/* Begin */
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
