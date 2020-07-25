@@ -1,3 +1,19 @@
+.float{
+  z-index: 10;
+	position:fixed;
+	width:55px;
+	height:55px;
+	bottom:20px;
+	left:20px;
+  /* background-color:#00bd7b; */
+  background-color:#25D366;
+  font-size: 35px;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+}
+
+.float:hover{color:white}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -1715,13 +1731,13 @@ section {
   text-align: left;
 }
 
-#footer .footer-newsletter form input[type="email"] {
+#footer .footer-newsletter form input[type="text"] {
   border: 0;
   padding: 4px 8px;
   width: calc(100% - 100px);
 }
 
-#footer .footer-newsletter form input[type="submit"] {
+#footer .footer-newsletter form button {
   position: absolute;
   top: 0;
   right: 0;
@@ -1737,7 +1753,7 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-#footer .footer-newsletter form input[type="submit"]:hover {
+#footer .footer-newsletter form button:hover {
   background: #0d58ba;
 }
 
