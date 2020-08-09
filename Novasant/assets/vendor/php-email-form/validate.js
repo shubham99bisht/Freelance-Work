@@ -60,7 +60,7 @@
             }
             break;
         }
-        i.next('.validate')((ierror ? (i.attr('data-msg') !== undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
+        i.next('.validate').html((ierror ? (i.attr('data-msg') !== undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
       }
     });
     f.children('textarea').each(function() { // run all inputs
@@ -91,7 +91,7 @@
             }
             break;
         }
-        i.next('.validate')((ierror ? (i.attr('data-msg') != undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
+        i.next('.validate').html((ierror ? (i.attr('data-msg') != undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
       }
     });
     if (ferror) return false;
@@ -101,7 +101,7 @@
 
     if( ! action ) {
       this_form.find('.loading').slideUp();
-      this_form.find('.error-message').slideDown()('The form action property is not set!');
+      this_form.find('.error-message').slideDown().html('The form action property is not set!');
       return false;
     }
     
@@ -139,7 +139,7 @@
         if(!msg) {
           msg = 'Form submission failed and no error message returned from: ' + action + '<br>';
         }
-        this_form.find('.error-message').slideDown()(msg);
+        this_form.find('.error-message').slideDown().html(msg);
       }
     }).fail( function(data){
       console.log(data);
@@ -158,7 +158,7 @@
         error_msg += data.responseText;
       }
       this_form.find('.loading').slideUp();
-      this_form.find('.error-message').slideDown()(error_msg);
+      this_form.find('.error-message').slideDown().html(error_msg);
     });
   }
 
