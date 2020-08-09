@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="icon" type="image/png" href="assets/favicon.png"/>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <style>
+      #mobile{display: none;}
+      #desktop{display: block;}
+      @media only screen and (max-width: 600px) {
+        #desktop{display: none;}
+        #mobile{display: block;}
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="desktop">
+        <div class="container" style="width:80%;text-align:center">
+          <br>
+          <img src="assets/desktop.jpeg" style="width:82%;">
+          <br><br><br>
+        </div>
+
+        <!-- <div class="container-fluid" id="footer" style="height:70px;background-color:blue;text-align:center">
+          <p style="color:white;padding-top:20px">Copyright (c) 2020 ZOPENS GROUP All Rights Reserved.</p>
+        </div> -->
+
+        <div class="container-fluid fixed-bottom" id="footer" style="height:70px;background-color:blue;text-align:center">
+          <p style="color:white;padding-top:20px">Copyright (c) 2020 ZOPENS GROUP All Rights Reserved.</p>
+        </div>
+    </div>
+
+
+    <div id="mobile">
+      <div class="container" style="width:100%;">
+        <br><br>
+        <img src="assets/mobile.jpg" style="width:100%;margin-bottom:100px">
+        <!-- <br><br> -->
+      </div>
+
+      <div class="container-fluid fixed-bottom" id="footer" style="height:50px;background-color:blue;text-align:center">
+        <p style="color:white;padding-top:10px">Copyright (c) 2020 ZOPENS GROUP All Rights Reserved.</p>
+      </div>
+    </div>
+
+
+    <script src="assets/jquery/jquery.min.js" charset="utf-8"></script>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js" charset="utf-8"></script>
+  </body>
+</html>

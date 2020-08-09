@@ -238,8 +238,8 @@
                     }
                     preloader += '</div>';
 
-                    navigation = '<a class="vbox-next">' + option.htmlNext + '</a><a class="vbox-prev">' + option.htmlPrev + '</a>';
-                    vbheader = '<div class="vbox-title"></div><div class="vbox-left"><div class="vbox-num">0/0</div></div><div class="vbox-close">' + option.htmlClose + '</div>';
+                    navigation = '<a class="vbox-next">' + optionNext + '</a><a class="vbox-prev">' + optionPrev + '</a>';
+                    vbheader = '<div class="vbox-title"></div><div class="vbox-left"><div class="vbox-num">0/0</div></div><div class="vbox-close">' + optionClose + '</div>';
                     vbfooter = '<div class="vbox-share"></div>';
 
                     core = '<div class="vbox-overlay ' + extraCss + '" style="background:'+ overlayColor +'">'+
@@ -295,7 +295,7 @@
                       'border-right-color' : option.arrowsColor
                     });
 
-                    content.html('');
+                    content('');
                     content.css('opacity', '0');
                     overlay.css('opacity', '0');
 
@@ -313,7 +313,7 @@
                         } else if (obj.data('vbtype') == 'video') {
                           loadVid(autoplay);
                         } else {
-                          content.html('<img src="'+dest+'">');
+                          content('<img src="'+dest+'">');
                           preloadFirst();
                         }
                         option.cb_post_open(obj, gallIndex, thenext, theprev);
@@ -343,7 +343,7 @@
                     gallItems = obj.data('gallItems');
                     infinigall = obj.data('infinigall');
                     share = obj.data('share');
-                    blockshare.html('');
+                    blockshare('');
                     if ( obj.data('vbtype') !== 'iframe' && obj.data('vbtype') !== 'inline' && obj.data('vbtype') !== 'ajax' ) {
                         sharelinks = { 
                             pinterest : '<a target="_blank" href="https://pinterest.com/pin/create/button/?url='+obj.prop('href')+'&media='+obj.prop('href')+'&description='+title+'">'+pinIcon+'</a>', 
@@ -378,7 +378,7 @@
                     // update gall numeration
                     if (items.length >= 1) {
                       gallIndex = items.index(obj)+1;
-                      blocknum.html(gallIndex + ' / ' + items.length);
+                      blocknum(gallIndex + ' / ' + items.length);
                     } else {
                       gallIndex = 1;
                     }
@@ -473,7 +473,7 @@
                         } else if (destination.data('vbtype') == 'video') {
                             loadVid(autoplay);
                         } else {
-                            content.html('<img src="'+dest+'">');
+                            content('<img src="'+dest+'">');
                             preloadFirst();
                         }
                         obj = destination;
@@ -661,18 +661,18 @@
                   url: dest,
                   cache: false
                   }).done(function( msg ) {
-                      content.html('<div class="vbox-inline">'+ msg +'</div>');
+                      content('<div class="vbox-inline">'+ msg +'</div>');
                       preloadFirst();
 
                   }).fail(function() {
-                      content.html('<div class="vbox-inline"><p>Error retrieving contents, please retry</div>');
+                      content('<div class="vbox-inline"><p>Error retrieving contents, please retry</div>');
                       updateoverlay();
                   });
                 }
 
                 /* -------- LOAD IFRAME -------- */
                 function loadIframe(){
-                    content.html('<iframe class="venoframe" src="'+dest+'"></iframe>');
+                    content('<iframe class="venoframe" src="'+dest+'"></iframe>');
                   //  $('.venoframe').load(function(){ // valid only for iFrames in same domain
                     updateoverlay();
                   //  });
@@ -693,7 +693,7 @@
                     } else if (videoObj.type == 'youtube') {
                       player = 'https://www.youtube.com/embed/';
                     }
-                    content.html('<iframe class="venoframe vbvid" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="autoplay" frameborder="0" src="'+player+videoObj.id+queryvars+'"></iframe>');
+                    content('<iframe class="venoframe vbvid" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="autoplay" frameborder="0" src="'+player+videoObj.id+queryvars+'"></iframe>');
                     updateoverlay();
                 }
 
@@ -736,7 +736,7 @@
 
                 /* -------- LOAD INLINE -------- */
                 function loadInline(){
-                    content.html('<div class="vbox-inline">'+$(dest).html()+'</div>');
+                    content('<div class="vbox-inline">'+$(dest)()+'</div>');
                     updateoverlay();
                 }
 
@@ -758,7 +758,7 @@
                 /* -------- FADE-IN THE NEW CONTENT -------- */
                 function updateoverlay(){
 
-                    blocktitle.html(title);
+                    blocktitle(title);
                     content.find(">:first-child").addClass('vbox-figlio').css({
                         'width': framewidth,
                         'height': frameheight,
